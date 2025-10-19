@@ -402,7 +402,7 @@ function updateClockDisplays(){
   const mm = Math.floor(diff/60000); diff%=60000;
   const ss = Math.floor(diff/1000); const ms = diff%1000;
   $('topClock').innerText = `${days}d ${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}:${String(ss).padStart(2,'0')} desde 18/09/2025 ❤️`;
-  $('bigClock').innerText = `${days} dias • ${String(hh).padStart(2,'0')}h : ${String(mm).padStart(2,'0')}m : ${String(ss).padStart(2,'0')}s}`;
+  $('bigClock').innerText = `${days} dias • ${String(hh).padStart(2,'0')}h : ${String(mm).padStart(2,'0')}m : ${String(ss).padStart(2,'0')}s`;
   $('sideClock').innerText = `${days} • ${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
 }
 setInterval(updateClockDisplays,33); updateClockDisplays();
